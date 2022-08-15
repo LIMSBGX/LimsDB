@@ -33,7 +33,7 @@
 				<div class="wrap-input100 validate-input m-b-25 " data-validate = "Enter password">
 					
                     
-					<asp:TextBox ID="textUserID" runat="server" CssClass="validate[required] w-88 m-l-10 m-b-2 m-t-2 " placeholder="UserID" />
+					<asp:TextBox ID="textUserID" runat="server" ReadOnly="true" CssClass="validate[required] w-88 m-l-10 m-b-2 m-t-2 " placeholder="UserID" />
 					<span class="focus-input100"></span>
 				</div>
 				
