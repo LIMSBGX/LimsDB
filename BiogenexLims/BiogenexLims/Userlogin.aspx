@@ -83,6 +83,7 @@
         });
     </script>
     <script type="text/javascript">
+        //disable browser back button
         window.onload = window.history.forward(0);
         function DateFormat(field, rules, i, options) {
             var regex = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
