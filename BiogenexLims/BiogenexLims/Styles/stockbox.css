@@ -1,0 +1,82 @@
+﻿        .wrapper 
+        {
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          column-gap: 20px;
+          row-gap: 1em;
+        }
+        .container
+        {
+          padding:20px 40px 40px 40px;
+        }
+        .content
+        {
+          background-color: rgb(10, 65, 104);
+          width: -webkit-fill-available;
+          color: #f17123;
+          text-align: center;
+          width:100%;
+          border-radius: 8px 8px 0 0;
+        }
+        .sub-conetent
+        {
+          color:rgb(10, 65, 104);
+          padding-top: 15px;            
+        }
+        .box
+        {
+          border: 1px solid rgb(10, 65, 104);
+          border-radius: 10px;
+          min-height: 100px;
+          align-items: center;
+          display: flex;
+          min-height: 216px;
+          min-width:290px;
+          align-content: stretch;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: flex-start;
+          line-height: 1.8em;
+          float:left;
+          margin-left:20px;
+          margin-bottom:20px;
+         }
+         
+        .newbox
+        {
+            border-radius: 10px;
+            min-height: 100px;
+            align-items: center;
+            display: flex;
+            align-content: stretch;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            line-height: 1.8em;
+            float: left;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            color: #164b70;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 25px;
+            box-shadow: 0px 0px 5px 4px #c8c8c8;
+            transition: .2s all ease-in-out;
+            cursor: pointer;
+         }
+         
+        .new-sub-conetent
+        {
+       
+          padding-top: 15px;            
+        }
+        
+        .newcontent
+        {
+         
+          width: -webkit-fill-available;
+          color: #f37224;
+          text-align: center;
+          width:100%;
+          
+        }

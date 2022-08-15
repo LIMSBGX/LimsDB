@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81DD9098-DC27-456D-86B4-AB934A109BAD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BiogenexLims</RootNamespace>
+    <AssemblyName>BiogenexLims</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="mysql.data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>MySqlDependes\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data.entity">
+      <HintPath>MySqlDependes\mysql.data.entity.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.visualstudio">
+      <HintPath>MySqlDependes\mysql.visualstudio.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.web, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>MySqlDependes\mysql.web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="ConsumablesPage.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="Images\biogenex.png" />
+    <Content Include="Images\logout.png" />
+    <Content Include="New-DashBoard.aspx" />
+    <Content Include="SampleRunStatus.aspx" />
+    <Content Include="Scripts\Account\ChangePassword.aspx" />
+    <Content Include="Scripts\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Scripts\Account\Login.aspx" />
+    <Content Include="Scripts\Account\Register.aspx" />
+    <Content Include="BufferInformation.aspx" />
+    <Content Include="CoverslipInfo.aspx" />
+    <Content Include="dashboard.aspx" />
+    <Content Include="Images\Biogenex_logo.jpg" />
+    <Content Include="Images\biogenex_logo.png" />
+    <Content Include="Images\popup_n.png" />
+    <Content Include="Images\popup_o.png" />
+    <Content Include="InstrumentDet.aspx" />
+    <Content Include="NA-InstrumentInfo.aspx" />
+    <Content Include="NA-InstrumentRegistration.aspx" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="PipetteInformation.aspx" />
+    <Content Include="printAjax.aspx" />
+    <Content Include="ProtocolDet.aspx" />
+    <Content Include="ProtocolListPopup.aspx" />
+    <Content Include="prtAjax.aspx" />
+    <Content Include="ReagentInformation.aspx" />
+    <Content Include="RunInformation.aspx" />
+    <Content Include="SampleAcceptance.aspx" />
+    <Content Include="SampleAcceptanceList.aspx" />
+    <Content Include="SampleRequest.aspx" />
+    <Content Include="SampleRequestList.aspx" />
+    <Content Include="SampleRequestListForAcceptence.aspx" />
+    <Content Include="SampStsRpt.aspx" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\Jquery-ui.js" />
+    <Content Include="Scripts\jquery.validationEngine-en.js" />
+    <Content Include="Scripts\jquery.validationEngine.min.js" />
+    <Content Include="SlideInformation.aspx" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\main.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\stockbox.css" />
+    <Content Include="Styles\StyleSheet1.css" />
+    <Content Include="Styles\util.css" />
+    <Content Include="Styles\validationEngine.jquery.css" />
+    <Content Include="Table-BufferInfo.aspx" />
+    <Content Include="Table-CoverSlipInfo.aspx" />
+    <Content Include="Table-pipetteInfo.aspx" />
+    <Content Include="Table-SlideIfo.aspx" />
+    <Content Include="UpdatedInstrument.aspx" />
+    <Content Include="UserList.aspx" />
+    <Content Include="Userlogin.aspx" />
+    <Content Include="UserRegistration.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="UpdateUser.aspx" />
+    <Content Include="UpdateConsumables.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumablesPage.aspx.cs">
+      <DependentUpon>ConsumablesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsumablesPage.aspx.designer.cs">
+      <DependentUpon>ConsumablesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="New-DashBoard.aspx.cs">
+      <DependentUpon>New-DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="New-DashBoard.aspx.designer.cs">
+      <DependentUpon>New-DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleRunStatus.aspx.cs">
+      <DependentUpon>SampleRunStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampleRunStatus.aspx.designer.cs">
+      <DependentUpon>SampleRunStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxHandler.cs" />
+    <Compile Include="AjaxHandler1.ashx.cs">
+      <DependentUpon>AjaxHandler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BufferInformation.aspx.cs">
+      <DependentUpon>BufferInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BufferInformation.aspx.designer.cs">
+      <DependentUpon>BufferInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstrumentDet.aspx.cs">
+      <DependentUpon>InstrumentDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstrumentDet.aspx.designer.cs">
+      <DependentUpon>InstrumentDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="printAjax.aspx.cs">
+      <DependentUpon>printAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="printAjax.aspx.designer.cs">
+      <DependentUpon>printAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProtocolDet.aspx.cs">
+      <DependentUpon>ProtocolDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProtocolDet.aspx.designer.cs">
+      <DependentUpon>ProtocolDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProtocolListPopup.aspx.cs">
+      <DependentUpon>ProtocolListPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProtocolListPopup.aspx.designer.cs">
+      <DependentUpon>ProtocolListPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Protocols.cs" />
+    <Compile Include="CoverslipInfo.aspx.cs">
+      <DependentUpon>CoverslipInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoverslipInfo.aspx.designer.cs">
+      <DependentUpon>CoverslipInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBUtil.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HttpSession.cs" />
+    <Compile Include="NA-InstrumentInfo.aspx.cs">
+      <DependentUpon>NA-InstrumentInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NA-InstrumentInfo.aspx.designer.cs">
+      <DependentUpon>NA-InstrumentInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NA-InstrumentRegistration.aspx.cs">
+      <DependentUpon>NA-InstrumentRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NA-InstrumentRegistration.aspx.designer.cs">
+      <DependentUpon>NA-InstrumentRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PipetteInformation.aspx.cs">
+      <DependentUpon>PipetteInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PipetteInformation.aspx.designer.cs">
+      <DependentUpon>PipetteInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PotocolsSynchronise.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prtAjax.aspx.cs">
+      <DependentUpon>prtAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prtAjax.aspx.designer.cs">
+      <DependentUpon>prtAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReagentInformation.aspx.cs">
+      <DependentUpon>ReagentInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReagentInformation.aspx.designer.cs">
+      <DependentUpon>ReagentInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RunInformation.aspx.cs">
+      <DependentUpon>RunInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RunInformation.aspx.designer.cs">
+      <DependentUpon>RunInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleAcceptance.aspx.cs">
+      <DependentUpon>SampleAcceptance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampleAcceptance.aspx.designer.cs">
+      <DependentUpon>SampleAcceptance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleAcceptanceList.aspx.cs">
+      <DependentUpon>SampleAcceptanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampleAcceptanceList.aspx.designer.cs">
+      <DependentUpon>SampleAcceptanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleRequest.aspx.cs">
+      <DependentUpon>SampleRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampleRequest.aspx.designer.cs">
+      <DependentUpon>SampleRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleRequestList.aspx.cs">
+      <DependentUpon>SampleRequestList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampleRequestList.aspx.designer.cs">
+      <DependentUpon>SampleRequestList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleRequestListForAcceptence.aspx.cs">
+      <DependentUpon>SampleRequestListForAcceptence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampleRequestListForAcceptence.aspx.designer.cs">
+      <DependentUpon>SampleRequestListForAcceptence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampStsRpt.aspx.cs">
+      <DependentUpon>SampStsRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampStsRpt.aspx.designer.cs">
+      <DependentUpon>SampStsRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SlideInformation.aspx.cs">
+      <DependentUpon>SlideInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SlideInformation.aspx.designer.cs">
+      <DependentUpon>SlideInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLDBUtil.cs" />
+    <Compile Include="Table-BufferInfo.aspx.cs">
+      <DependentUpon>Table-BufferInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Table-BufferInfo.aspx.designer.cs">
+      <DependentUpon>Table-BufferInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Table-CoverSlipInfo.aspx.cs">
+      <DependentUpon>Table-CoverSlipInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Table-CoverSlipInfo.aspx.designer.cs">
+      <DependentUpon>Table-CoverSlipInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Table-pipetteInfo.aspx.cs">
+      <DependentUpon>Table-pipetteInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Table-pipetteInfo.aspx.designer.cs">
+      <DependentUpon>Table-pipetteInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Table-SlideIfo.aspx.cs">
+      <DependentUpon>Table-SlideIfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Table-SlideIfo.aspx.designer.cs">
+      <DependentUpon>Table-SlideIfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatedInstrument.aspx.cs">
+      <DependentUpon>UpdatedInstrument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdatedInstrument.aspx.designer.cs">
+      <DependentUpon>UpdatedInstrument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Userlogin.aspx.cs">
+      <DependentUpon>Userlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userlogin.aspx.designer.cs">
+      <DependentUpon>Userlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUser.aspx.cs">
+      <DependentUpon>UpdateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateUser.aspx.designer.cs">
+      <DependentUpon>UpdateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateConsumables.aspx.cs">
+      <DependentUpon>UpdateConsumables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateConsumables.aspx.designer.cs">
+      <DependentUpon>UpdateConsumables.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AjaxHandler1.ashx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3932</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

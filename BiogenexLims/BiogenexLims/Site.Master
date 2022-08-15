@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BiogenexLims.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .MinTable
+        {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header1">
+         <table width="100%" height="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+            <tr height="55" style="height: 55px;">
+                <td width="100%">
+                    <table width="100%" height="100%" align="center" border="1" cellspacing="0" cellpadding="0">
+                        <tr height="35" valign="bottom">
+                            <td width="10%">
+                                <img src="IMAGES/biogenex_logo.png" />
+                                <br />
+                            </td>
+                            <td style="text-align: center; vertical-align: middle; font-family: Arial;">
+                                <span style="font-weight: bold; font-size: 24px; color: #426AA6">Sample Management</span>
+                                <br />
+                                <span style="font-weight: bold;">CaliberEDAP Integrated Solution for Automated Sample
+                                    Management</span>
+                                <br />
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                        <tr width="100%" height="600">
+                <td width="100%" height="100%">
+                    <table width="100%" height="100%" align="center" border="1" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="235" style="vertical-align:top" >
+                                <br />
+                                <table width="100%" height="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td height="25" align="center"><a href="home.aspx" class="button">Registration</a> </td>
+                                </tr>
+                                <tr >
+                                  <td height="25" align="center"><a href="home.aspx" class="button">Instruments</a></td>
+                                </tr>
+                                <tr>
+                                  <td height="25" align="center"><a href="home.aspx" class="button">Sample Request</a></td>
+                                </tr>
+                                <tr>
+                                  <td height="25" align="center"><a href="home.aspx" class="button">Sample Acceptence</a></td>
+                                </tr>
+                                <tr>
+                                  <td height="25" align="center"><a href="home.aspx" class="button">Sample Report</a></td>
+                                </tr>
+                                </table>
+                    
+                                
+                                
+                           <!--     <asp:Table ID="menuTbl" runat="server" CssClass="MinTable">
+                                
+                                
+                                </asp:Table>-->
+                                
+
+                                
+                            </td>
+                            <td>
+                            <!--    <iframe id="AppBody" name="AppBody" style="display: block" align="middle" height="100%"
+                                    scrolling="auto" src="Home.aspx" width="100%" marginwidth="0" marginheight="0"></iframe>-->
+                                    <div class="main">
+                                           <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                                     </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+       
+            
+        </div>
+            </div>
+        
+    </div>
+    </form>
+</body>
+</html>
